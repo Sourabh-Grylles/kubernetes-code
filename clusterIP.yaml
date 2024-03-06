@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  name: maven-clusterIP
+  namespace: project-2
+spec:
+  type: ClusterIP
+  selector:
+    app: maven-app
+  ports:
+  - protocol: TCP
+    port: 80            #<serviceport>
+    targetPort: 8080     #containerport
