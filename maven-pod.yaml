@@ -8,8 +8,8 @@ metadata:
 spec:
   containers:
   - name: maven-container
-    image: 8983795200/maven-web-application:1
+    image: devopspankaj9201/maven-web-app:1
     ports:
     - containerPort: 8080
-  imagePullSecrets:
-  - name: pankaj-secret
+# imagePullSecrets:
+  #- name: pankaj-secret
